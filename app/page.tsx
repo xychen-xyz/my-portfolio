@@ -45,6 +45,7 @@ export default function Home() {
       <header className="flex items-center justify-between pb-4">
         <nav className="flex items-center space-x-5 text-sm">
           <a href="#about" className="font-medium text-neutral-900 dark:text-neutral-100 hover:opacity-75 transition">home</a>
+          <a href="#projects" className="text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 transition">projects</a>
           <a href="#work" className="text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 transition">work</a>
           <a href="#writing" className="text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 transition">writing</a>
           <a href="#demo" className="text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 transition">pipeline</a>
@@ -79,7 +80,56 @@ export default function Home() {
         <div className="flex items-center gap-4 text-xs font-mono pt-2 text-neutral-500 dark:text-neutral-400">
           <a href="#contact" className="hover:text-neutral-900 dark:hover:text-neutral-100 underline underline-offset-4">contact me ↗</a>
           <a href="#writing" className="hover:text-neutral-900 dark:hover:text-neutral-100 underline underline-offset-4">read essays ↗</a>
-          <a href="https://github.com" target="_blank" rel="noreferrer" className="hover:text-neutral-900 dark:hover:text-neutral-100 underline underline-offset-4">github ↗</a>
+          <a href="https://github.com/xychen-xyz" target="_blank" rel="noreferrer" className="hover:text-neutral-900 dark:hover:text-neutral-100 underline underline-offset-4">github ↗</a>
+        </div>
+      </section>
+
+      <hr className="border-neutral-200 dark:border-neutral-800/80" />
+
+      {/* 精选实战项目 / Featured Projects */}
+      <section id="projects" className="space-y-4">
+        <div className="flex items-center justify-between">
+          <h2 className="text-lg font-bold tracking-tight text-neutral-900 dark:text-neutral-100">
+            Featured Projects
+          </h2>
+          <span className="text-xs font-mono text-neutral-400 dark:text-neutral-500">Interactive Web Apps</span>
+        </div>
+
+        <div className="border border-neutral-200 dark:border-neutral-800 rounded-xl p-5 bg-gradient-to-br from-neutral-50 to-white dark:from-[#151515] dark:to-[#111111] space-y-3 transition hover:border-neutral-300 dark:hover:border-neutral-700 shadow-sm">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div className="flex items-center gap-2.5">
+              <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+              <h3 className="font-semibold text-neutral-900 dark:text-neutral-100 text-[15px]">
+                OptiPack 3D · 智能集装箱配载与空间优化系统
+              </h3>
+            </div>
+            <span className="text-xs font-mono text-sky-600 dark:text-sky-400 font-medium">
+              Three.js · WebGL · 3D Bin Packing
+            </span>
+          </div>
+
+          <p className="text-neutral-600 dark:text-neutral-400 text-xs leading-relaxed">
+            针对跨境建材与工业制造出海的高昂海运痛点，基于 Three.js 研发的纯前端 3D 智能装箱与空间利用率优化系统。支持 40HQ/20GP 等国际海运标柜、长方体与圆柱体混合装载、防滚落约束、Excel 清单批量导入与装箱图谱导出。
+          </p>
+
+          <div className="flex items-center gap-3 pt-1 text-xs font-mono">
+            <a
+              href="https://optipack-3d.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-neutral-900 text-white dark:bg-neutral-100 dark:text-neutral-900 font-medium hover:opacity-90 transition shadow-sm"
+            >
+              <span>🚀 在线体验 Live Demo ↗</span>
+            </a>
+            <a
+              href="https://github.com/xychen-xyz/optipack-3d"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md border border-neutral-300 dark:border-neutral-700 text-neutral-700 dark:text-neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-800 transition"
+            >
+              <span>💻 GitHub 源码 ↗</span>
+            </a>
+          </div>
         </div>
       </section>
 
@@ -256,7 +306,7 @@ export default function Home() {
           </li>
           <li>
             <span className="text-neutral-400 dark:text-neutral-500 w-20 inline-block">github:</span>
-            <a href="https://github.com" target="_blank" rel="noreferrer" className="text-neutral-900 dark:text-neutral-100 hover:underline">@yourusername ↗</a>
+            <a href="https://github.com/xychen-xyz" target="_blank" rel="noreferrer" className="text-neutral-900 dark:text-neutral-100 hover:underline">@xychen-xyz ↗</a>
           </li>
         </ul>
 
